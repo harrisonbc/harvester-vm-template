@@ -37,7 +37,6 @@ spec:
               type: tablet
           interfaces:
             - bridge: {}
-              macAddress: 02:35:4b:66:c2:55
               model: virtio
               name: default
         features:
