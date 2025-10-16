@@ -1,0 +1,14 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: harvester-vm-template
+  namespace: fleet-default
+spec:
+  branch: main
+  paths:
+    - project-name-vms
+  repo: https://github.com/harrisonbc/harvester-vm-template.git
+  targets:
+    - clusterSelector:
+        matchLabels:
+          provider.cattle.io: harvester
